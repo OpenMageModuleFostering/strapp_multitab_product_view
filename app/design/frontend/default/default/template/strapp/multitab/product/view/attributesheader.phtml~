@@ -42,7 +42,7 @@ foreach ($attributes as $attribute)
 <?php if($_additional = $this->getAdditionalData()): ?>
       <?php foreach ($group_ids as $group_id): ?>
 	 <?php $group_name = $group_names[$group_id];?>
-	  <li id="product_tabs_<?php echo $group_name?>">
+	  <li id="strapp_product_tabs_<?php echo $group_name?>">
 	    <a href="#"><?php echo $group_name?></a>
 	  </li>
       <?php endforeach; ?>

@@ -1,0 +1,33 @@
+/*Styles for Multitab */
+div.product-view ul.strapp-product-tabs
+{
+  border-bottom: 2px solid #DCDCDC;
+  margin-bottom: 0;
+}
+
+div.product-view ul.strapp-product-tabs li
+{
+  background-color: #DCDCDC;
+  border-radius: 5px 5px 0 0;
+  display: inline-block;
+  float: none;
+  padding: 10px 15px;
+}
+
+div.product-view .strapp-product-tabs li > a
+{
+  color: #000000;
+  font: 18px/1.25 helvetica,arial,sans-serif;
+}
+
+div.product-view .strapp-product-tabs-content
+{
+  background-color: #FFFFFF;
+  margin-bottom: 25px;
+  padding: 25px 20px;  
+}
+    
+div.product-view .strapp-product-tabs li.active ,div.product-view .strapp-product-tabs li.active a:hover
+{  
+  background-color: #666666;    
+}
