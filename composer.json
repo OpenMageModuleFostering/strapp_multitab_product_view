@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/strapp_multitab_product_view",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "StrApp Multitab Product View Community Module",
+    "authors": [
+    {
+        "name": "StrApp",
+        "email": "strappvivek@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

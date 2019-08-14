@@ -1,0 +1,62 @@
+<?php
+/**
+* Strapp Multitab Module
+*
+* @category    Strapp
+* @package     Strapp_Multitab
+*/
+?>
+<?php
+  $_helper = $this->helper('catalog/output');
+  $_product= Mage::registry('current_product'); 
+?>
+<ul class="product-tabs">
+   <li id="product_tabs_description" class="active first">
+      <a href="#">Description</a></li>
+   </li>
+    <?php echo $this->getLayout()->createBlock('catalog/product_view_attributes')->setTemplate('strapp/multitab/product/view/attributesheader.phtml')->toHtml(); ?>
+    <li id="product_tabs_product.tags" class="last">
+      <a href="#">Product Tags</a>
+    </li>
+</ul>  
+<div class="product-tabs-content" id="product_tabs_description_contents">
+  <div class="std"><?php echo $_product->getDescription(); ?></div>
+</div>
+<?php echo $this->getLayout()->createBlock('catalog/product_view_attributes')->setTemplate('strapp/multitab/product/view/attributescontent.phtml')->toHtml(); ?>
+<div class="product-tabs-content" id="product_tabs_product.tags_contents">
+<?php echo $this->getLayout()->createBlock('tag/product_list')->setTemplate('tag/list.phtml')->toHtml(); ?>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+Varien.Tabs = Class.create();
+Varien.Tabs.prototype = {
+  initialize: function(selector) {
+    var self=this;
+    $$(selector+' a').each(this.initTab.bind(this));
+  },
+
+  initTab: function(el) {
+      el.href = 'javascript:void(0)';
+      if ($(el.parentNode).hasClassName('active')) {
+        this.showContent(el);
+      }
+      el.observe('click', this.showContent.bind(this, el));
+  },
+
+  showContent: function(a) {
+    var li = $(a.parentNode), ul = $(li.parentNode);
+    ul.select('li', 'ol').each(function(el){
+      var contents = $(el.id+'_contents');
+      if (el==li) {
+        el.addClassName('active');
+        contents.show();
+      } else {
+        el.removeClassName('active');
+        contents.hide();
+      }
+    });
+  }
+}
+new Varien.Tabs('.product-tabs');
+//]]>
+</script>

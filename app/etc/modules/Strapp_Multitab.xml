@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Strapp_Multitab>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Strapp_Multitab>
+    </modules>
+</config>

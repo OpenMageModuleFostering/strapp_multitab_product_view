@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>strapp_multitab_product_view</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>StrApp Multitab Product View Community Module</summary>
+    <description>A lot of products have a lot of information that needs to be displayed for e.g. a smart phone would have information about the features, battery, OS, processor, maintenance, etc. And each of these would have a lot of details. For a good user experience, having this information in tabs would be very helpful.Magento doesn't provide information to be displayed as tabs by default, in the product description page. With the Multi tab extension, you can very easily have any number of tabs for your product.</description>
+    <notes>A lot of products have a lot of information that needs to be displayed for e.g. a smart phone would have information about the features, battery, OS, processor, maintenance, etc. And each of these would have a lot of details. For a good user experience, having this information in tabs would be very helpful.Magento doesn't provide information to be displayed as tabs by default, in the product description page. With the Multi tab extension, you can very easily have any number of tabs for your product.</notes>
+    <authors><author><name>StrApp</name><user>strviv</user><email>strappvivek@gmail.com</email></author></authors>
+    <date>2013-12-19</date>
+    <time>09:46:23</time>
+    <contents><target name="magelocal"><dir name="Strapp"><dir name="Multitab"><dir name="etc"><file name="adminhtml.xml" hash="70169be8e9c2b26abafea29a89d7a572"/><file name="adminhtml.xml~" hash="70169be8e9c2b26abafea29a89d7a572"/><file name="config.xml" hash="df558a9004473652dd5b0a8800fbc168"/><file name="config.xml~" hash="df558a9004473652dd5b0a8800fbc168"/><file name="system.xml" hash="22586cd46cd6c363dcac0ad770ae4681"/><file name="system.xml~" hash="22586cd46cd6c363dcac0ad770ae4681"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="strapp_multitabdisplay.xml" hash="5800455c2e78eaea3474fc0b6c6637f0"/></dir><dir name="template"><dir name="strapp"><file name="attributescontent.phtml~" hash="fd5aab3805f047fa3b0ae484af9e33a3"/><file name="attributesheader.phtml~" hash="5b258c4bce613c4bae2af30de86957e0"/><dir name="multitab"><file name="list.phtml~" hash="4173f87b07c8b168aa48f9910c77962b"/><dir name="product"><dir name="view"><file name="attributescontent.phtml" hash="02fc6dcd9c04140730e5ad4683b856a2"/><file name="attributescontent.phtml~" hash="02fc6dcd9c04140730e5ad4683b856a2"/><file name="attributesheader.phtml" hash="3208ad536a247a27cdb2ae821d252c24"/><file name="attributesheader.phtml~" hash="3208ad536a247a27cdb2ae821d252c24"/><file name="tabs.phtml" hash="00de5325eea91ac70cca582327820a3f"/><file name="tabs.phtml~" hash="ff89e902ff40206613df226cea3b462e"/></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Strapp_Multitab.xml" hash="c90c6162d4830da765df915f753dd2c6"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.5.6</max></php></required></dependencies>
+</package>
