@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/strapp_multitab_product_view",
+    "name": "openmage-module-fostering\/strapp_multitab_product_view",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "StrApp Multitab Product View Community Module",
     "authors": [
